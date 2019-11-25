@@ -21,7 +21,7 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
     ![002](./images/doc/002.png?classes=border)
 
-1. Notebook instance 이름으로 `sagemaker-inference-hol-[YOUR-NAME]` 으로 넣은 뒤 `ml.m2.medium` 인스턴스 타입을 선택합니다. 
+1. Notebook instance 이름으로 `sagemaker-inference-hol-[YOUR-NAME]` 으로 넣은 뒤 `ml.t2.medium` 인스턴스 타입을 선택합니다. 
 
     ![003](./images/doc/003.png?classes=border)
 
