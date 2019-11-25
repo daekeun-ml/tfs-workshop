@@ -17,11 +17,11 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
 ## Notebook instance 생성
 
-1. 새로운 Notebook instance를 생성하기 위해 왼쪽 패널 메뉴 중 Notebook Instances 선택 후 오른쪽 상단의 `Create notebook instance` 버튼을 클릭 합니다.
+1. 새로운 Notebook instance를 생성하기 위해 왼쪽 패널 메뉴 중 Notebook Instances 선택 후 오른쪽 상단의 `Create notebook instance` 버튼을 클릭합니다.
 
     ![002](./images/doc/002.png?classes=border)
 
-1. Notebook instance 이름으로 `sagemaker-inference-hol-[YOUR-NAME]` 으로 넣은 뒤 `ml.m2.medium` 인스턴스 타입을 선택 합니다. 
+1. Notebook instance 이름으로 `sagemaker-inference-hol-[YOUR-NAME]` 으로 넣은 뒤 `ml.m2.medium` 인스턴스 타입을 선택합니다. 
 
     ![003](./images/doc/003.png?classes=border)
 
@@ -42,7 +42,7 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
     ![006](./images/doc/006.png?classes=border)
 
-1. 검은색 Terminal 화면이 출력되면, 아래의 명령어를 순차적으로 입력합니다.
+1. 검은색 Terminal 화면이 출력되면, 아래의 명령어를 순차적으로 입력합니다. 이 과정은 네트워크 속도에 따라 변동적이지만 평균적으로 약 10초 정도 소요됩니다.
 
     ```
     $ cd SageMaker
@@ -50,7 +50,7 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
     ```
     ![007](./images/doc/007.png?classes=border)
 
-1. Github 코드가 복사되었으면 Google object detection API를 아래의 명령어로 설치합니다. 이 API는 TensorFlow Serving에는 필요 없지만, 추론(inference) 결과를 확인할 때 유용하게 활용할 수 있습니다. 
+1. Github 코드가 복사되었으면 Google object detection API를 아래의 명령어로 설치합니다. 이 API는 TensorFlow Serving에는 필요 없지만, 추론(inference) 결과를 확인할 때 유용하게 활용할 수 있습니다. 이 과정은 네트워크 속도에 따라 변동적이지만, 약 2분 정도 소요됩니다.
 
     ```
     $ cd tfs-workshop/files
@@ -58,5 +58,16 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
     ```
     ![008](./images/doc/008.png?classes=border)        
 
+1. 아래 스크린샷처럼 `Finished processing dependencies for object-detection==0.1` 문구가 정상적으로 출력되었는지 확인합니다.
+
+    ![009](./images/doc/009.png?classes=border)        
+
+1. 다시 Jupyter Notebook 홈페이지로 돌아가서 `tfs-workshop` 폴더가 생성되었는지 확인하고,  `tfs-workshop` 폴더를 클릭합니다.
+
+    ![010](./images/doc/010.png?classes=border)   
+
+1. 아래 스크린샷의 파일들이 정상적으로 생성되었는지 확인합니다. `.ipynb` 파일들이 다음 모듈에서 실습으로 사용하게 될 코드들입니다.
+
+    ![011](./images/doc/011.png?classes=border)   
 
 수고하셨습니다. 준비 과정을 완료하였습니다.
