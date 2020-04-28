@@ -5,7 +5,8 @@
 SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서는 해당 목적으로 S3 Bucket을 생성합니다. 본 실습에서는 `Seoul (ap-northeast-2)` 리전을 사용합니다.<br>
 
 1. [AWS 관리 콘솔](https://console.aws.amazon.com/)에 Sign in 합니다. <br>
-    만약 AWS 측에서 Event Engine을 사용하여 임시 아이디를 생성한 경우 제공받으신 URL을 여시고 team hash code를 입력하시면 됩니다.
+    만약 AWS 측에서 Event Engine을 사용하여 임시 아이디를 생성한 경우 제공받으신 URL을 여시고 team hash code를 입력하시면 됩니다.<br>
+    이벤트 엔진 접속 가이드는 https://bit.ly/workshop-guide-sagemaker 를 참조해 주세요.
 
 1. AWS Services 리스트에서 S3 로 이동합니다.
 1. `"+ Create Bucket"` 버튼을 선택합니다.
@@ -66,8 +67,10 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
     ![010](./images/doc/010.png?classes=border)   
 
-1. 아래 스크린샷의 파일들이 정상적으로 생성되었는지 확인합니다. `.ipynb` 파일들이 다음 모듈에서 실습으로 사용하게 될 코드들입니다.
+1. 아래 스크린샷의 파일들이 정상적으로 생성되었는지 확인합니다. `.ipynb` 파일들이 다음 모듈에서 실습으로 사용하게 될 코드들입니다. 
 
     ![011](./images/doc/011.png?classes=border)   
 
-수고하셨습니다. 준비 과정을 완료하였습니다.
+수고하셨습니다. 준비 과정을 완료하였습니다. <br>
+이어서 TensorFlow로 사전 훈련한 모델을 Endpoint로 호스팅하는 방법은 `tensorflow-serving-endpoint.ipynb`을, 
+MXNet(GluonCV)으로 사전 훈련한 모델을 Endpoint로 호스팅하는 방법은 `mxnet-serving-endpoint.ipynb`을 실행하시면 됩니다.
