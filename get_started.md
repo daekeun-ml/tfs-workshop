@@ -6,7 +6,7 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
 1. [AWS 관리 콘솔](https://console.aws.amazon.com/)에 Sign in 합니다. <br>
     만약 AWS 측에서 Event Engine을 사용하여 임시 아이디를 생성한 경우 제공받으신 URL을 여시고 team hash code를 입력하시면 됩니다.<br>
-    이벤트 엔진 접속 가이드는 https://bit.ly/workshop-guide-sagemaker 를 참조해 주세요.
+    Event Engine 접속 가이드는 https://bit.ly/workshop-guide-sagemaker 를 참조해 주세요.
 
 1. AWS Services 리스트에서 S3 로 이동합니다.
 1. `"+ Create Bucket"` 버튼을 선택합니다.
@@ -47,7 +47,7 @@ SageMaker는 S3를 데이터와 모델 저장소로 사용합니다. 여기서�
 
     ```
     $ cd SageMaker
-    $ git clone https://github.com/daekeun-ml/tfs-workshop
+    $ git clone https://github.com/daekeun-ml/tfs-workshop.git
     ```
     ![007](./images/doc/007.png?classes=border)
 
