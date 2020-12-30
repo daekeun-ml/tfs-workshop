@@ -10,13 +10,10 @@ Amazon SageMaker에서 딥러닝 모델을 모두 훈련하고 추론(inference)
 이 워크샵을 통해 여러분은 딥러닝의 대표적인 아키텍처인 TensorFlow/MXNet으로 사전 훈련된 모델을 Amazon SageMaker Endpoint로 호스팅하는 방법을 배울 수 있습니다.
 
 1. [사전 준비 (필수)](get_started.md)
-2. [TensorFlow로 사전 훈련한 모델을 Endpoint로 호스팅](tensorflow-serving-endpoint.ipynb)
+2. [PyTorch로 사전 훈련한 모델을 Endpoint로 호스팅](pytorch-serving-endpoint.ipynb)
 3. [MXNet으로 사전 훈련한 모델을 Endpoint로 호스팅](mxnet-serving-endpoint.ipynb)
+4. [TensorFlow로 사전 훈련한 모델을 Endpoint로 호스팅](tensorflow-serving-endpoint.ipynb)
 
 ## License Summary
 
 이 샘플 코드는 MIT-0 라이센스에 따라 제공됩니다. LICENSE 파일을 참조하십시오.
-
-<br>
-
-[Privacy](https://aws.amazon.com/privacy/) | [Site terms](https://aws.amazon.com/terms/) | © 2020, Amazon Web Services, Inc. or its affiliates. All rights reserved.
