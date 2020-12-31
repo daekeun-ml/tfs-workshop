@@ -1,4 +1,3 @@
-
 def get_label_map(label_file):
     label_map = {}
     labels = open(label_file, 'r')
@@ -8,6 +7,15 @@ def get_label_map(label_file):
         ids = line.split(',')
         label_map[int(ids[0])] = ids[2] 
         
+    return label_map
+
+
+def get_label_map_imagenet(label_file):
+    label_map = {}
+    with open(label_file, 'r') as f:
+        for line in f:
+            key, val = line.strip().split(':')
+            label_map[key] = val.replace(',', '')
     return label_map
 
 

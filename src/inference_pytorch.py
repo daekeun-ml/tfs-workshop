@@ -15,16 +15,21 @@ from torchvision.models.detection import FasterRCNN
 import torchvision.transforms as transforms
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
-# Loads the model into memory from storage and return the model.
+    
 def model_fn(model_dir=None):
+    '''
+    Loads the model into memory from storage and return the model.
+    '''
     model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
     # load the model onto the computation device
     model = model.eval().to(device)    
     return model
 
-# Deserialize the request body and predicts on the deserialized object with the model from model_fn()
-def transform_fn(model, request_body, content_type='application/x-image', accept_type=None):
 
+def transform_fn(model, request_body, content_type='application/x-image', accept_type=None):
+    '''
+    Deserialize the request body and predicts on the deserialized object with the model from model_fn()
+    '''
     if content_type == 'application/x-image':             
         img = np.array(Image.open(io.BytesIO(request_body)))
     elif content_type == 'application/x-npy':    

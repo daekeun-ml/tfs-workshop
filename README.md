@@ -9,10 +9,18 @@ Amazon SageMaker에서 딥러닝 모델을 모두 훈련하고 추론(inference)
 <p>
 이 워크샵을 통해 여러분은 딥러닝 프레임워크로 사전 훈련된 모델을 Amazon SageMaker Endpoint로 호스팅하는 방법을 배울 수 있습니다.
 
-1. [사전 준비 (Optional)](get_started.md)
-2. [PyTorch로 사전 훈련한 모델을 Endpoint로 호스팅](pytorch-serving-endpoint.ipynb)
-3. [MXNet으로 사전 훈련한 모델을 Endpoint로 호스팅](mxnet-serving-endpoint.ipynb)
-4. [TensorFlow로 사전 훈련한 모델을 Endpoint로 호스팅](tensorflow-serving-endpoint.ipynb)
+- [사전 준비 (Optional)](get_started.md)
+
+### PyTorch
+- [PyTorch로 사전 훈련한 모델을 Endpoint로 호스팅](pytorch-serving-endpoint.ipynb)
+- [사전 훈련된 PyTorch 모델을 SageMaker Neo로 컴파일하기](pytorch-serving-neo.ipynb)
+- [사전 훈련된 PyTorch 모델을 SageMaker Neo로 컴파일 후 Inf1 인스턴스에 배포하기](pytorch-serving-neo-inf1.ipynb)
+
+### MXNet
+- [MXNet으로 사전 훈련한 모델을 Endpoint로 호스팅](mxnet-serving-endpoint.ipynb)
+
+### TensorFlow
+- [TensorFlow로 사전 훈련한 모델을 Endpoint로 호스팅](tensorflow-serving-endpoint.ipynb)
 
 ## License Summary
 
